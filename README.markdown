@@ -1,24 +1,27 @@
 Storm最初由Nathan Marz和BackType的团队创建。BackType是一家社交分析公司。后来，Storm被收购，并通过Twitter开源。在短时间内，Apache Storm成为分布式实时处理系统的标准，允许您处理大量的数据，类似于Hadoop。Apache Storm是用Java和Clojure写的。它仍然是实时分析的领导者。
 
 什么是Apache Storm？
+
 Apache Storm是一个分布式实时大数据处理系统。Storm设计用于在容错和水平可扩展方法中处理大量数据。它是一个流数据框架，具有最高的摄取率。虽然Storm是无状态的，它通过Apache ZooKeeper管理分布式环境和集群状态。它很简单，您可以并行地对实时数据执行各种操作。
+
 Apache Storm继续成为实时数据分析的领导者。Storm易于设置和操作，并且它保证每个消息将通过拓扑至少处理一次。
 
 Apache Storm vs Hadoop
+
 基本上Hadoop和Storm框架用于分析大数据。两者互补，在某些方面有所不同。Apache Storm执行除持久性之外的所有操作，而Hadoop在所有方面都很好，但滞后于实时计算。
-| Storm | Hadoop |
-| - | :-: |
-| 实时流处理 | 批量处理|
-| 无状态 | 有状态 |
-| 主/从架构与基于ZooKeeper的协调。主节点称为nimbus，从属节点是主管。 | 具有/不具有基于ZooKeeper的协调的主-从结构。主节点是JobTracker，从节点是TaskTracker。 | 
 
 使用Apache Storm的例子
+
 Apache Storm对于实时大数据流处理非常有名。因此，大多数公司都将Storm用作其系统的一个组成部分。一些值得注意的例子如下:
+
 Twitter - Twitter正在使用Apache Storm作为其“发布商分析产品”。 “发布商分析产品”处理Twitter平台中的每个tweets和点击。 Apache Storm与Twitter基础架构深度集成。
+
 NaviSite - NaviSite正在使用Storm进行事件日志监控/审计系统。系统中生成的每个日志都将通过Storm。Storm将根据配置的正则表达式集检查消息，如果存在匹配，那么该特定消息将保存到数据库。
+
 Wego - Wego是位于新加坡的旅行元搜索引擎。旅行相关数据来自世界各地的许多来源，时间不同。Storm帮助Wego搜索实时数据，解决并发问题，并为最终用户找到最佳匹配。
 
 Apache Storm优势
+
 下面是Apache Storm提供的好处列表：
 
     Storm是开源的，强大的，用户友好的。它可以用于小公司和大公司。
